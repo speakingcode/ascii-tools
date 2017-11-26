@@ -4,17 +4,22 @@
   "description": "",
   "author": "speakingcode",
   "license": "MIT",
-  
   "main": "index.js",
-
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive",
+    "test": "mocha --compilers js:babel-core/register --recursive",
     "test:watch": "npm test -- --watch"
   },
-
   "babel": {
     "presets": [
-      "es2015"
+      "env"
     ]
-  }
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  },
+  "dependencies": {}
 }

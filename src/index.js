@@ -1,2 +1,2 @@
-export * from './src/overlayChars'
-export * from './src/overlayLines'
+export * from './overlayChars'
+export * from './overlayLines'

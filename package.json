@@ -1,10 +1,9 @@
 {
-  "name": "stringtools",
-  "version": "1.0.0",
-  "description": "",
-  "author": "speakingcode",
+  "name": "ascii-tools",
+  "version": "1.0.1",
+  "description": "tools for text manipulation",
+  "author": "speakingcode (http://speakingcode.com)",
   "license": "MIT",
-  "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --recursive",
     "test:watch": "npm test -- --watch"

@@ -1,10 +1,8 @@
-const overlayLines = (
+const overlayChars = (
   bottom        = "",
   top           = "",
   offset        = 0,
-  preserveWidth = true
 ) => {
-  if (preserveWidth) {
     let bottomLeftEnd     = offset,
         topEnd            = offset > bottom.length ? 0 : bottom.length - offset,
         bottomRightStart  = top.length + offset,
@@ -13,7 +11,7 @@ const overlayLines = (
     return bottom.slice(0, bottomLeftEnd) +
            top.slice(0, topEnd) +
            bottom.slice(bottomRightStart, bottomRightEnd)
-  }
+
 }
 
-export { overlayLines }
+export { overlayChars }

@@ -1,6 +1,6 @@
 {
   "name": "ascii-tools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "tools for text manipulation",
   "author": "speakingcode (http://speakingcode.com)",
   "license": "MIT",
@@ -9,15 +9,15 @@
     "dist"
   ],
   "scripts": {
-    "start"       : "npm run dev",
-    "dev"         : "npm test -- -w",
-    "init"        : "mkdir dist",
-    "clean"       : "rm -rf dist",
-    "prebuild"    : "npm run clean && npm run init",
-    "build"       : "babel ./src -d ./dist --ignore spec.js",
-    "pretest"     : "npm run build",
-    "test"        : "mocha --compilers js:babel-core/register ./src/**/*.spec.js",
-    "test:single" : "mocha --compilers js:babel-core/register"
+    "start": "npm run dev",
+    "dev": "npm test -- -w",
+    "init": "mkdir dist",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean && npm run init",
+    "build": "babel ./src -d ./dist --ignore spec.js",
+    "pretest": "npm run build",
+    "test": "mocha --compilers js:babel-core/register ./src/**/*.spec.js",
+    "test:single": "mocha --compilers js:babel-core/register"
   },
   "babel": {
     "presets": [
